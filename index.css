@@ -406,6 +406,7 @@ line-height: normal;
 }
 .inner-flex
 {
+    padding-left: 100px;
     font-family: Poppins;
     color: #FFF;
     font-size: 16px;
