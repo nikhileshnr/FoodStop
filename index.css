@@ -1,7 +1,7 @@
 html
 {
     width: auto;
-    height:auto;
+    height: auto;
     font-style: normal;
     line-height: normal;
 }
@@ -9,11 +9,15 @@ body
 {
     margin-left: 180px;
     margin-right: 180px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 a
 {
     text-decoration: none;
+}
+a:hover
+{
+    cursor: pointer;
 }
 .flex-container
 {
@@ -67,6 +71,10 @@ font-family: Inter;
 font-size: 14px;
 font-weight: 500;
 }
+input:focus
+{
+    outline: none;
+}
 .second>input
 {
     width: 100%;
@@ -74,6 +82,7 @@ font-weight: 500;
     font-size: 11px;
     font-weight: 500;
     border: none;
+    
 }
 .third
 {
@@ -344,4 +353,71 @@ body>#rectangle
     margin-top: 20vw;
     background-color:#FC8019;
     transform: rotate(152.836deg);
+}
+.gap
+{
+    height: 300px;
+    width: 100%;
+
+}
+#footer
+{
+    margin-left: -180px;
+    width: 1920px;
+    height: auto;
+    background-color: #FC8019;
+    height: 163px;
+    padding-top: 150px;
+}
+.flex6
+{
+    display: flex;
+width: 80%;
+justify-content: space-between;
+align-items: center;
+margin-left: 180px;
+margin-right: 180px;
+}
+.logoflex
+{
+    display: flex;
+    align-items: center;
+}
+.footname
+{
+    margin-left: 5px;
+    margin-top: -2px;
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 28px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+#contact
+{
+    color: #FFF;
+font-family:Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.inner-flex
+{
+    font-family: Poppins;
+    color: #FFF;
+    font-size: 16px;
+    display: inline-flex;
+align-items: flex-start;
+gap: 60px;
+}
+.flex7
+{
+    display: flex;
+    justify-content: center;
+align-items: center;
+gap: 20px;
+margin-top: 20px;
 }
