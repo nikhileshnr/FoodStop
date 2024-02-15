@@ -1,9 +1,8 @@
 
 body
 {
-    margin: 0px 180px;
+    margin: 0px 160px;
     overflow-x: hidden;
-    padding: 0;
 }
 a
 {
@@ -27,7 +26,7 @@ a:hover
     gap: 8px;
     color: #202020;
     font-family: Poppins;
-    font-size: 28px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -43,14 +42,14 @@ flex-shrink: 0;
 {
     display: flex;
 align-items: center;
-gap: 25px;
+gap: 20px;
 }
 .second
 {
     display: flex;
-width: 300px;
+width: 250px;
 height: 12px;
-padding: 15px 25px;
+padding: 12px 18px;
 justify-content: space-between;
 align-items: center;
 border-radius: 10px;
@@ -62,7 +61,7 @@ input
 {
     color: #808080;
 font-family: Inter;
-font-size: 14px;
+font-size: 16px;
 font-weight: 500;
 }
 input:focus
@@ -87,7 +86,7 @@ input:focus
 button
 {
     display: flex;
-    padding: 16px 25px;
+    padding: 13px 25px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -114,32 +113,32 @@ button
     margin-top: 80px;
     display: inline-flex;
 align-items: center;
-gap: 60px;
+gap: 50px;
 /* border: 2px solid black; */
 width: 100%;
-height: 640px;
+height: 80vh;
 }
 .child-flex
 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
+    gap: 25px;
     /* border: 2px solid blue; */
-    width:790px;
+    width:650px;
     height:562px;
 }
 .flex4
 {
-    width:790px;
-    height:260px;
+    width:60vw;
+    height:50vh;
     display: inline-flex;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
 /* border: 2px solid red; */
     color: #202020;
-font-size: 60px;
+font-size: 53px;
 font-weight: 600;
 }
 .line
@@ -150,13 +149,13 @@ font-weight: 600;
 .sc4,.sc6,span
 {
     color: #FC8019;
-font-size: 60px;
+font-size: 53px;
 font-weight: 600;
 }
 .sc3,.sc5
 {
-width: 85px;
-height: 50px;
+width: 65px;
+height: 35px;
 padding: 20px 50px 20px 0px;
 justify-content: center;
 align-items: center;
@@ -170,25 +169,26 @@ background: #FFEDD0;
 }
 .sc5>img
 {
-    width: 50px;
-    height:80px;
-    margin-left: 50%;
+    width: 45px;
+    height:70px;
+    margin-left: 55%;
+    margin-top: -8px;
     animation: moveTopBottom 1.8s linear infinite; 
 }
 .sc3>img
 {
-    width: 50px;
-height: 80px;
+    width: 45px;
+height: 70px;
 margin-left: 10px;
-margin-top: -18px;
-animation: moveRightLeft 1.8s linear infinite;
+margin-top: -25px;
+animation: moveRightLeft 2.0s linear infinite;
 }
-@keyframes moveTopBottom {
+ @keyframes moveTopBottom {
     0%, 100% {
-        transform: translateY(-30px);
+        transform: translateY(-20px);
     }
     50% {
-        transform: translateY(0); /* Adjust this value based on your design */
+        transform: translateY(0px); /* Adjust this value based on your design */
     }
 }
 
@@ -197,14 +197,14 @@ animation: moveRightLeft 1.8s linear infinite;
         margin-left: 20px;
     }
     50% {
-        margin-left: 70px;
+        margin-left: 60px;
     }
 }
 .c2
 {
     color: #404040;
 font-family: Inter;
-font-size: 16px;
+font-size: 15px;
 font-weight: 400;
 line-height: 25px;
 }
@@ -218,44 +218,45 @@ gap: 20px;
 {
 border-radius: 10px;
 border: 1px solid #808080;
-width: 622px;
+width: 36vw;
 padding: 12px 10px;
 border-radius: 10px;
 
 }
 .c3>div>a>button
 {
-    padding-left:18px;
+    width: 110px;
+    height: 46px;
+    padding-left:17px;
     padding-right: 18px;
     padding-top: 10px;
     padding-bottom: 12px;
-    font-size: 15px;
+    font-size: 13px;
     margin: 0;
 }
 .modify::placeholder
 {
-    padding-left: 14px;
+    padding-left: 12px;
 }
 .c4 
 {
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-gap: 30px;
+gap: 20px;
 }
 .c4>div
 {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
     color: #808080;
+    font-family: Inter;
 }
 .flex5
 {
     display: flex;
     gap: 20px;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 500;
+
 }
 .odd 
 {
