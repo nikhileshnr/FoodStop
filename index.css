@@ -14,7 +14,7 @@ a:hover
 }
 .flex-container
 {
-    margin-top: 35px;
+    margin-top: 30px;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -110,7 +110,7 @@ button
 }
 .flex3
 {
-    margin-top: 80px;
+    margin-top: 50px;
     display: inline-flex;
 align-items: center;
 gap: 50px;
@@ -293,8 +293,7 @@ gap: 20px;
   .pic-ctn {
     position: relative;
     width: 100%;
-    height: 650px;
-    margin-top: 90px;
+    height: 500px;
     margin-left: -250px;
     overflow: hidden;
   }
@@ -302,7 +301,7 @@ gap: 20px;
   .pic-ctn > img {
     position: absolute;
     top: 0;
-    left: calc(50% - 100px);
+    left: 50%;
     opacity: 0;
     animation: display 9s infinite;
     border-radius: 30px;
@@ -323,10 +322,8 @@ gap: 20px;
     background-color: #FC8019;
     opacity: 0.5;
     z-index: -1;
-    margin-left: -390px;
-    margin-top: 45px;
+    margin-left: -390px;;
     transform: rotate(-37.836deg);
-    mix-blend-mode: normal;
     border-radius: 0 10px 10px 0;
     z-index: -2;
 }
@@ -345,33 +342,32 @@ body>#rectangle
 {
     width: 281px;
     margin-left: 85vw;
-    margin-top: 20vw;
+    margin-top: 15vw;
     background-color:#FC8019;
     transform: rotate(152.836deg);
 }
 .gap
 {
-    height: 300px;
+    height: 200px;
     width: 100%;
 
 }
 #footer
 {
-    margin-left: -180px;
-    width: 1920px;
+    margin-left: -160px;
+    width: 100vw;
     height: auto;
     background-color: #FC8019;
-    height: 163px;
-    padding-top: 150px;
+    height: 123px;
+    padding-top: 110px;
 }
 .flex6
 {
     display: flex;
-width: 80%;
 justify-content: space-between;
 align-items: center;
-margin-left: 180px;
-margin-right: 180px;
+margin-left: 160px;
+margin-right: 160px;
 }
 .logoflex
 {
@@ -385,7 +381,7 @@ margin-right: 180px;
     color: #FFF;
 text-align: center;
 font-family: Poppins;
-font-size: 28px;
+font-size: 24px;
 font-style: normal;
 font-weight: 800;
 line-height: normal;
@@ -394,7 +390,7 @@ line-height: normal;
 {
     color: #FFF;
 font-family:Inter;
-font-size: 16px;
+font-size: 14px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -404,7 +400,7 @@ line-height: normal;
     padding-left: 100px;
     font-family: Poppins;
     color: #FFF;
-    font-size: 16px;
+    font-size: 14px;
     display: inline-flex;
 align-items: flex-start;
 gap: 60px;
