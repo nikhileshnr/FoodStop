@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SignIn</title>
     <link rel="stylesheet" href="./signin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +18,9 @@
         <div class="flex-container">
             <div class="first">
                 <div class="first-sub">
-                    <img src="./assets/Subtract.png">
+                    <img src="./assets/Subtract.svg">
                 </div>
-                <div class="second-sub">FoodStop</div>
+                <a href="./Index.html"><div class="second-sub">FoodStop</div></a>
             </div>
         </div>
     </header>
@@ -33,18 +33,44 @@
                 <div class="toggle2">Email</div>
             </div>
             <div class="child2"><input type="tel" placeholder="Phone Number"> </div>
-            <div class="child3">Request OTP</div>
+            <div class="child3"><div>Request OTP</div></div>
             <div class="child4">
-                <div><hr></div>
-                <div>OR</div>
-                <div><hr></div>
+                <div class="line"></div>
+                <div class="or">OR</div>
+                <div class="line"></div>
             </div>
             <div class="child5">
-                <div></div>
-                <div></div>
+                <div class="logo"><img src="./assets/Google.svg"> </div>
+                <div class="text">Login with Google</div>
             </div>
             <div class="child6">Not registered yet?<span>Create an account</span></div>
         </div>
     </div>
+    <div class="gap"></div>
+    <div id="footer">
+        <div class="flex6">
+            <div class="logoflex">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.41904C0 0.139537 5.35289 -0.803163 7.80629 2.70326C10.2648 6.21694 11.7134 10.4917 11.7301 15.1045C11.7301 10.5322 13.1371 6.28915 15.5409 2.78611C17.8898 -0.636952 23.0647 0.267582 23.0647 4.41905V9.91066C23.0647 16.2798 17.9015 21.443 11.5324 21.443C5.16321 21.443 0 16.2798 0 9.91065V4.41904Z" fill="white"/>
+                    </svg>
+                </div>
+                <a href="#" id="top-link"><div class="footname">FoodStop</div></a>
+            </div>
+            <div class="inner-flex">
+                <div><a>About us</a></div>
+                <div><a>Delivery</a></div>
+                <div><a>Help & Support</a></div>
+                <div><a>T&C</a></div>
+            </div>
+            <div id="contact">Contact: <a>nikhilesh21.nr@gmail.com</a></div>
+        </div>
+        <div class="flex7">
+            <div><a><img src="./assets/facebook.svg"></a></div>
+            <div><a><img src="./assets/Instagram.svg"></a></div>
+            <div><a><img src="./assets/twitter.svg"></a></div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
