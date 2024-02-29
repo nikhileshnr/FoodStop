@@ -147,7 +147,7 @@ input:focus
 
   .heading {
     color: #202020;
-    font: 24px Poppins, sans-serif;
+    font: 35px Poppins, sans-serif;
     font-weight: 700;
   }
 
@@ -202,7 +202,238 @@ input:focus
     margin-top: 20px;
     font-size: 19px;
   }
+  #personal-flex
+  {
+    margin-top: 70px;
+    display: flex;
+    gap:45px;
+    justify-content: space-around;
+  }
+  #head-flex
+  {
+
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    gap: 80px;
+    
+  }
+  #head-flex>div
+  {
+    margin-left: 28px;
+    width: 50%;
+    font-family: Inter;
+    font-size:24px;
+  }
+  #divide
+  {
+    margin-top: 100px;
+    margin-left: -180px;
+    width: 98.9vw;
+    height: 30vh;
+    background-color: #FC8019;
+  }
+  .browse-grid
+  {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: 90%;
+  }
 
 
 
-  
+  .restaurant-container {
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    display: flex;
+    max-width: 257px;
+    flex-direction: column;
+    font-size: 16px;
+    color: #202020;
+    font-weight: 500;
+    padding: 25px;
+  }
+
+  .restaurant-image {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .restaurant-name {
+    margin-top: 20px;
+    text-transform: capitalize;
+    color: #202020;
+    font-size: 20px;
+  }
+
+  .restaurant-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .cuisine-type {
+    flex-grow: 1;
+    color: #808080;
+    text-transform: lowercase;
+  }
+
+  .rating-block,
+  .time-info,
+  .price-info {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .rating-icon,
+  .time-icon,
+  .price-icon {
+    width: 20px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .rating-value,
+  .time-text,
+  .price-text {
+    color: #202020;
+  }
+  .menu-item-container {
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    display: flex;
+    max-width: 257px;
+    flex-direction: column;
+    font-size: 16px;
+    color: #202020;
+    font-weight: 500;
+    padding: 25px;
+  }
+
+  .menu-item-image {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+  }
+
+  .menu-item-title {
+    text-transform: capitalize;
+    margin-top: 20px;
+    font: 20px Poppins, sans-serif;
+  }
+
+  .vendor-name {
+    color: #808080;
+    font-family: Poppins, sans-serif;
+    text-transform: lowercase;
+    margin-top: 20px;
+  }
+
+  .price-time-container {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    gap: 20px;
+    white-space: nowrap;
+    padding: 0 1px;
+  }
+
+  .price-container,
+  .time-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .price-icon,
+  .time-icon {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 20px;
+    margin: auto 0;
+  }
+
+  .time-icon {
+    aspect-ratio: 1.11;
+  }
+
+  .price-text,
+  .time-text {
+    font-family: Poppins, sans-serif;
+    flex-grow: 1;
+  }
+
+  #footer
+{
+    margin-top: 200px;
+    margin-left: -160px;
+    width: 100vw;
+    height: auto;
+    background-color: #FC8019;
+    height: 123px;
+    padding-top: 110px;
+}
+.flex6
+{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+margin-left: 160px;
+margin-right: 160px;
+}
+.logoflex
+{
+    display: flex;
+    align-items: center;
+}
+.footname
+{
+    margin-left: 5px;
+    margin-top: -2px;
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+#contact
+{
+    color: #FFF;
+font-family:Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.inner-flex
+{
+    padding-left: 100px;
+    font-family: Poppins;
+    color: #FFF;
+    font-size: 14px;
+    display: inline-flex;
+align-items: flex-start;
+gap: 60px;
+}
+.flex7
+{
+    display: flex;
+    justify-content: center;
+align-items: center;
+gap: 20px;
+margin-top: 20px;
+}
