@@ -64,6 +64,10 @@ flex-shrink: 0;
     gap: 80px;
     font-family: Inter;
 }
+.flex1
+{
+    margin-left: -40px;
+}
 .flex1>img
 {
     width: 500px;

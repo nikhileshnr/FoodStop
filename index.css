@@ -95,6 +95,7 @@ button
     color: #FDFBFA;
     font-family: Inter;
     font-size: 15px;
+    border: none;
 }
 .fourth :hover
 {
