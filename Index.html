@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./style/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
     <title>FoodStop</title>
     <link rel="icon" type="image/x-icon" href="./assets/Subtract.svg">
     <script src="https://unpkg.com/smoothscroll-polyfill@0.6.11/dist/smoothscroll.min.js"></script>
-    <script src="index.js"></script>
-
+    <script src="global.js"></script>
 </head>
 
 <body>
@@ -67,9 +66,9 @@
                         ordering your favorite meals from the comfort of your home.</p>
                 </div>
                 <div class="c3">
-                    <div><input type="text" class="modify" placeholder="Enter your delivery location"> </div>
+                    <div><input type="text" class="modify" id="inputField" placeholder="Enter your delivery location"> </div>
                     <div class="hov">
-                        <a href="./browse.html"><button style="
+                        <a href="./browse.html"><button onclick="storeAndNavigate()" style="
                             margin-top: 2px;">Get Started</button></a>
                     </div>
                 </div>
@@ -123,8 +122,20 @@
                     <div><a><img src="./assets/twitter.svg"></a></div>
                 </div>
             </div>
-        </footer>
-    </main>
+            </main>
 </body>
+<script>
+function storeAndNavigate() {
+    // Get the input value
+    var inputValue = document.getElementById('inputField').value;
+
+    // Store it in localStorage (you can use other methods like cookies, session storage, etc.)
+    localStorage.setItem('storedInput', inputValue);
+
+    // Redirect to another page
+    window.location.href = 'browse.html';
+}</script>
+        </footer>
+
 
 </html>
