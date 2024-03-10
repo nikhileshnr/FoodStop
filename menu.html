@@ -11,6 +11,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/Subtract.svg" />
     <script src="https://unpkg.com/smoothscroll-polyfill@0.6.11/dist/smoothscroll.min.js"></script>
     <link rel="stylesheet" href="./style/menu.css" />
+    <script src="./menu.js"></script>
 </head>
 
 <body>
@@ -68,13 +69,19 @@
     </header>
     <div id="hero">
         <div id="info-flex">
-            <div class="flex-element"><img src="./assets/menu.png" /></div>
+            <div class="flex-element"><img src="./assets/Starbucks_front.jpg" /></div>
             <div class="flex-element grid-container">
-                <div class="grid-item">Ramachandra Parlour</div>
-                <div class="grid-item">South Indian, North Indian, Thali</div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
+                <div class="grid-item">Starbucks Coffee</div>
+                <div class="grid-item">Beverages, Cafe</div>
+                <div class="grid-item" style="display: flex; gap: 5px;">
+                    <img src="./assets/greenstar.svg" width="20px" height="20px">
+                    <span id="rating">4.0</span>
+                </div>
+                <div class="grid-item"><span>30 mins</span></div>
+                <div class="grid-item"><span>₹400</span></div>
+                <div class="grid-item"><span>1k+ ratings</span></div>
+                <div class="grid-item"><span>Delivery time</span></div>
+                <div class="grid-item"><span>Cost for two</span></div>
             </div>
             <div class="offers-container flex-element">
                 <header class="offer-title">Offers</header>
@@ -97,18 +104,170 @@
     </div>
     <div id="search-flex">
         <div class="second fav">
-            <input type="text" placeholder="Enter item or restaurant you are looking for" />
+            <input type="text" placeholder="Search for dish" />
             <img src="./assets/Vector.png" width="20px" />
         </div>
-        <div>
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
-                    <path opacity="0.75"
-                        d="M4.55122 19.8492L4.84504 19.4446C4.80119 19.4128 4.76713 19.3693 4.74674 19.3191C4.72635 19.2688 4.72044 19.2139 4.72968 19.1605L4.7298 19.1598L5.803 12.9061L5.84746 12.647L5.65924 12.4635L1.11669 8.03472L1.11666 8.03468C1.06114 7.98056 1.02937 7.90661 1.02835 7.82908C1.02732 7.75185 1.05689 7.67735 1.11057 7.62185C1.1562 7.57557 1.21414 7.54639 1.27605 7.53755L1.27725 7.53737L7.55571 6.62491L7.8159 6.58709L7.93221 6.35129L10.7376 0.663776C10.7378 0.663467 10.738 0.66316 10.7381 0.662852C10.8115 0.517413 10.9878 0.459775 11.1299 0.529955L11.1305 0.530241C11.1873 0.558171 11.2333 0.604162 11.2612 0.660924L11.2614 0.661356L14.0681 6.35129L14.1844 6.58709L14.4446 6.62491L20.7214 7.53714C20.7217 7.53717 20.7219 7.53721 20.7221 7.53724C20.8861 7.56197 20.992 7.71124 20.9684 7.86396L20.9684 7.86395L20.9676 7.86949C20.9588 7.93149 20.9295 7.98953 20.8831 8.03519C20.8829 8.03533 20.8828 8.03547 20.8827 8.03562L16.341 12.4635L16.1528 12.647L16.1973 12.9061L17.2705 19.1598L17.2705 19.1602C17.2976 19.3171 17.1923 19.4675 17.0329 19.495L17.0322 19.4951C16.9688 19.5061 16.9038 19.4955 16.8508 19.4672L16.8486 19.466L11.2328 16.5135L11.0001 16.3912L10.7675 16.5135L5.1517 19.466L5.15093 19.4664C5.103 19.4917 5.04893 19.5031 4.99487 19.4993C4.9408 19.4954 4.8889 19.4765 4.84505 19.4446L4.55122 19.8492Z"
-                        stroke="#404040" />
-                </svg>
-                Favourite
-            </button>
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none"
+                style="margin-top: -2px;">
+                <path opacity="0.75"
+                    d="M4.55122 19.8492L4.84504 19.4446C4.80119 19.4128 4.76713 19.3693 4.74674 19.3191C4.72635 19.2688 4.72044 19.2139 4.72968 19.1605L4.7298 19.1598L5.803 12.9061L5.84746 12.647L5.65924 12.4635L1.11669 8.03472L1.11666 8.03468C1.06114 7.98056 1.02937 7.90661 1.02835 7.82908C1.02732 7.75185 1.05689 7.67735 1.11057 7.62185C1.1562 7.57557 1.21414 7.54639 1.27605 7.53755L1.27725 7.53737L7.55571 6.62491L7.8159 6.58709L7.93221 6.35129L10.7376 0.663776C10.7378 0.663467 10.738 0.66316 10.7381 0.662852C10.8115 0.517413 10.9878 0.459775 11.1299 0.529955L11.1305 0.530241C11.1873 0.558171 11.2333 0.604162 11.2612 0.660924L11.2614 0.661356L14.0681 6.35129L14.1844 6.58709L14.4446 6.62491L20.7214 7.53714C20.7217 7.53717 20.7219 7.53721 20.7221 7.53724C20.8861 7.56197 20.992 7.71124 20.9684 7.86396L20.9684 7.86395L20.9676 7.86949C20.9588 7.93149 20.9295 7.98953 20.8831 8.03519C20.8829 8.03533 20.8828 8.03547 20.8827 8.03562L16.341 12.4635L16.1528 12.647L16.1973 12.9061L17.2705 19.1598L17.2705 19.1602C17.2976 19.3171 17.1923 19.4675 17.0329 19.495L17.0322 19.4951C16.9688 19.5061 16.9038 19.4955 16.8508 19.4672L16.8486 19.466L11.2328 16.5135L11.0001 16.3912L10.7675 16.5135L5.1517 19.466L5.15093 19.4664C5.103 19.4917 5.04893 19.5031 4.99487 19.4993C4.9408 19.4954 4.8889 19.4765 4.84505 19.4446L4.55122 19.8492Z"
+                    stroke="#404040" />
+            </svg>
+            <span>Favourite</span>
+        </button>
+    </div>
+    <div class="newflex-container">
+        <div class="newflex-item newinner-flex-container">
+            <div class="new-inner-flex-item" onclick="scrollToSection('content1',this)">Recommended</div>
+            <div class="new-inner-flex-item" onclick="scrollToSection('content2',this)">Value Meals(20% off)</div>
+            <div class="new-inner-flex-item" onclick="scrollToSection('content3',this)">Picco (New Small Size) Beverages</div>
+            <div class="new-inner-flex-item" onclick="scrollToSection('content4',this)">Puffs, Wraps, Sandwiches & Savoury Snacks</div>
+            <div class="new-inner-flex-item" onclick="scrollToSection('content5',this)">Spring Specials</div>
+            <div class="new-inner-flex-item" onclick="scrollToSection('content6',this)">Gift Hampers (20% Off)</div>
+            <div class="new-inner-flex-item" onclick="scrollToSection('content7',this)">Cold Coffee, Milkshakes & Frappuccino</div>
+            <div class="new-inner-flex-item" onclick="scrollToSection('content8',this)">Cold Beverages (Iced Coffee)</div>
+            <div class="new-inner-flex-item" onclick="scrollToSection('content9',this)">Hot Beverages</div>
+            <div class="new-inner-flex-item" onclick="scrollToSection('content10',this)">Croissants</div>
+            <div class="new-inner-flex-item" onclick="scrollToSection('content11',this)">Cookies, Cakes & Desserts</div>
+            <div class="new-inner-flex-item" onclick="scrollToSection('content12',this)">Ready To Drink & Eat</div>
+            <div class="new-inner-flex-item" onclick="scrollToSection('content13',this)">Breakfast Specials</div>
+        </div>
+        <div class="newflex-item">
+            <div class="vanish-flex right" id="content1">
+                <div class="vanish-flex-element">
+                    <div class="vanish-item" style="grid-area: veg;"><img src="./assets/veg.svg" width="20px"
+                            height="20px"> </div>
+                    <div class="vanish-item" style="grid-area: title;">
+                        <h4 style="margin:0;">Bhuna Chicken Puff</h4>
+                    </div>
+                    <div class="vanish-item" style="grid-area: price;">₹190</div>
+                    <div class="vanish-item" style="grid-area: description;">A spiced & flavourful bhuna chicken filling
+                        encased in a puff pastry with a topping of black sesame seeds. Serving size (g/ml) -
+                        85g/390kcal. Allergen - Contains Milk, Wheat, Soy, Rye, Oat, Egg. An average active adult
+                        requires 2000 kcal energy per day; however, calorie needs may vary</div>
+                    <div class="vanish-item" style="grid-area: image;"><img
+                            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/3c99abd0beafe902d89913741a963124">
+                    </div>
+                </div>
+                <div class="vanish-flex-element">
+                    <div class="vanish-item" style="grid-area: veg;"><img src="./assets/veg.svg" width="20px"
+                            height="20px"> </div>
+                    <div class="vanish-item" style="grid-area: title;">
+                        <h4 style="margin:0;">Bhuna Chicken Puff</h4>
+                    </div>
+                    <div class="vanish-item" style="grid-area: price;">₹190</div>
+                    <div class="vanish-item" style="grid-area: description;">A spiced & flavourful bhuna chicken filling
+                        encased in a puff pastry with a topping of black sesame seeds. Serving size (g/ml) -
+                        85g/390kcal. Allergen - Contains Milk, Wheat, Soy, Rye, Oat, Egg. An average active adult
+                        requires 2000 kcal energy per day; however, calorie needs may vary</div>
+                    <div class="vanish-item" style="grid-area: image;"><img
+                            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/3c99abd0beafe902d89913741a963124">
+                    </div>
+                </div>
+                <div class="vanish-flex-element">
+                    <div class="vanish-item" style="grid-area: veg;"><img src="./assets/veg.svg" width="20px"
+                            height="20px"> </div>
+                    <div class="vanish-item" style="grid-area: title;">
+                        <h4 style="margin:0;">Bhuna Chicken Puff</h4>
+                    </div>
+                    <div class="vanish-item" style="grid-area: price;">₹190</div>
+                    <div class="vanish-item" style="grid-area: description;">A spiced & flavourful bhuna chicken filling
+                        encased in a puff pastry with a topping of black sesame seeds. Serving size (g/ml) -
+                        85g/390kcal. Allergen - Contains Milk, Wheat, Soy, Rye, Oat, Egg. An average active adult
+                        requires 2000 kcal energy per day; however, calorie needs may vary</div>
+                    <div class="vanish-item" style="grid-area: image;"><img
+                            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/3c99abd0beafe902d89913741a963124">
+                    </div>
+                </div>
+                <div class="vanish-flex-element">
+                    <div class="vanish-item" style="grid-area: veg;"><img src="./assets/veg.svg" width="20px"
+                            height="20px"> </div>
+                    <div class="vanish-item" style="grid-area: title;">
+                        <h4 style="margin:0;">Bhuna Chicken Puff</h4>
+                    </div>
+                    <div class="vanish-item" style="grid-area: price;">₹190</div>
+                    <div class="vanish-item" style="grid-area: description;">A spiced & flavourful bhuna chicken filling
+                        encased in a puff pastry with a topping of black sesame seeds. Serving size (g/ml) -
+                        85g/390kcal. Allergen - Contains Milk, Wheat, Soy, Rye, Oat, Egg. An average active adult
+                        requires 2000 kcal energy per day; however, calorie needs may vary</div>
+                    <div class="vanish-item" style="grid-area: image;"><img
+                            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/3c99abd0beafe902d89913741a963124">
+                    </div>
+                </div>
+            </div>
+<hr>
+            <div class="vanish-flex right" id="content2">
+                <div class="vanish-flex-element">
+                    <div class="vanish-item" style="grid-area: veg;"><img src="./assets/veg.svg" width="20px"
+                            height="20px"> </div>
+                    <div class="vanish-item" style="grid-area: title;">
+                        <h4 style="margin:0;">Bhuna Chicken Puff</h4>
+                    </div>
+                    <div class="vanish-item" style="grid-area: price;">₹190</div>
+                    <div class="vanish-item" style="grid-area: description;">A spiced & flavourful bhuna chicken filling
+                        encased in a puff pastry with a topping of black sesame seeds. Serving size (g/ml) -
+                        85g/390kcal. Allergen - Contains Milk, Wheat, Soy, Rye, Oat, Egg. An average active adult
+                        requires 2000 kcal energy per day; however, calorie needs may vary</div>
+                    <div class="vanish-item" style="grid-area: image;"><img
+                            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/3c99abd0beafe902d89913741a963124">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="vanish-flex right" id="content3">
+                <div class="vanish-flex-element">
+                    <div class="vanish-item" style="grid-area: veg;"><img src="./assets/veg.svg" width="20px"
+                            height="20px"> </div>
+                    <div class="vanish-item" style="grid-area: title;">
+                        <h4 style="margin:0;">Bhuna Chicken Puff</h4>
+                    </div>
+                    <div class="vanish-item" style="grid-area: price;">₹190</div>
+                    <div class="vanish-item" style="grid-area: description;">A spiced & flavourful bhuna chicken filling
+                        encased in a puff pastry with a topping of black sesame seeds. Serving size (g/ml) -
+                        85g/390kcal. Allergen - Contains Milk, Wheat, Soy, Rye, Oat, Egg. An average active adult
+                        requires 2000 kcal energy per day; however, calorie needs may vary</div>
+                    <div class="vanish-item" style="grid-area: image;"><img
+                            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/3c99abd0beafe902d89913741a963124">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newflex-item cart-summary">
+            <div class="cart-header">
+                <div class="cart-title">Cart</div>
+                <div class="item-count">2 Items</div>
+            </div>
+            <div class="store-name"> from <span>Starbucks Coffee</span> </div>
+            <div class="item-details">
+                <div>
+                    <div class="item-title">Brunch for 2 - Veg</div>
+                    <div class="item-price">₹599</div>
+                </div>
+                <div>
+                    <div class="quantity">1</div>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/820df027b65a27ce85a38cf1e728d5ca6af30efe3f2536207f9383b96808f899?apiKey=5efabc45b92e4528bcb3abb251f05f9a&"
+                        alt="Brunch for 2 - Veg" class="item-image" />
+                </div>
+            </div>
+            <div class="store-name"> from <span>Ramachandra Parlour</span> </div>
+            <div class="item-details">
+                <div>
+                    <div class="item-title">Paneer Signature Rice Bowl (Regular)</div>
+                    <div class="item-price">₹200</div>
+                </div>
+                <div>
+                    <div class="quantity">1</div>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/820df027b65a27ce85a38cf1e728d5ca6af30efe3f2536207f9383b96808f899?apiKey=5efabc45b92e4528bcb3abb251f05f9a&"
+                        alt="Paneer Signature Rice Bowl" class="item-image" />
+                </div>
+            </div>
+            <div class="totals">
+                <div class="subtotal-text">Subtotal</div>
+                <div class="subtotal-amount">₹799</div>
+            </div>
+            <div class="extra-charges">Extra charges may apply</div>
+            <button class="checkout-button">Checkout</button>
         </div>
     </div>
 </body>

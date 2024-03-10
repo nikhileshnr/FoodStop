@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-});
+
     // Retrieve the stored input value from localStorage
     var storedInput = localStorage.getItem('storedInput');
 
@@ -31,3 +31,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Call the function initially and update whenever needed
         updateInputWidth()
+    });
